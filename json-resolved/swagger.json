@@ -1,33 +1,21 @@
 {
   "openapi" : "3.0.0",
   "info" : {
-    "title" : "accounts api",
-    "description" : "api to manage accounts",
+    "title" : "transactions api",
+    "description" : "manage transactions",
     "version" : "1.0.0"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/MLC_PoC/accounts/1.0.0",
+    "url" : "https://virtserver.swaggerhub.com/MLC_PoC/transactions/1.0.0",
     "description" : "SwaggerHub API Auto Mocking"
   } ],
   "paths" : {
-    "/accounts" : {
+    "/transactions" : {
       "get" : {
-        "summary" : "get a list of accounts",
-        "description" : "this is a description with some **bold** text",
+        "summary" : "get a list of transactions",
         "responses" : {
           "200" : {
-            "description" : "success",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Account"
-                },
-                "example" : {
-                  "id" : 123,
-                  "name" : "some name"
-                }
-              }
-            }
+            "description" : "success"
           }
         },
         "x-mlc-poc" : {
@@ -36,7 +24,7 @@
         }
       },
       "post" : {
-        "summary" : "get a list of accounts",
+        "summary" : "create a transaction",
         "responses" : {
           "200" : {
             "description" : "success"
@@ -46,24 +34,18 @@
           "some" : "details about this method"
         }
       }
-    }
-  },
-  "components" : {
-    "schemas" : {
-      "Account" : {
-        "required" : [ "id", "name" ],
-        "type" : "object",
-        "properties" : {
-          "id" : {
-            "type" : "string"
-          },
-          "name" : {
-            "type" : "string"
+    },
+    "/klingon-is-this-searchable" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "success"
           }
         }
       }
     }
   },
+  "components" : { },
   "x-mlc-poc" : {
     "some" : "info about the api"
   }
