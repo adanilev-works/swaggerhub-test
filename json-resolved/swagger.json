@@ -1,0 +1,44 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "accounts api",
+    "description" : "api to manage accounts",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/MLC_PoC/accounts/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "paths" : {
+    "/accounts" : {
+      "get" : {
+        "summary" : "get a list of accounts",
+        "description" : "this is a description with some **bold** text",
+        "responses" : {
+          "200" : {
+            "description" : "success"
+          }
+        },
+        "x-mlc-poc" : {
+          "some" : "details about this method",
+          "someList" : [ "with", "more", "details" ]
+        }
+      },
+      "post" : {
+        "summary" : "get a list of accounts",
+        "responses" : {
+          "200" : {
+            "description" : "success"
+          }
+        },
+        "x-mlc-poc" : {
+          "some" : "details about this method"
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-mlc-poc" : {
+    "some" : "info about the api"
+  }
+}
