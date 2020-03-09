@@ -16,7 +16,17 @@
         "description" : "this is a description with some **bold** text",
         "responses" : {
           "200" : {
-            "description" : "success"
+            "description" : "success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Account"
+                },
+                "example" : {
+                  "$ref" : "https://api.swaggerhub.com/domains/MLC_PoC/account/1.0.0#/components/examples/validAccount"
+                }
+              }
+            }
           }
         },
         "x-mlc-poc" : {
@@ -37,7 +47,22 @@
       }
     }
   },
-  "components" : { },
+  "components" : {
+    "schemas" : {
+      "Account" : {
+        "required" : [ "id", "name" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  },
   "x-mlc-poc" : {
     "some" : "info about the api"
   }
