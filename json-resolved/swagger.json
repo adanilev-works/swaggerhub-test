@@ -1,18 +1,19 @@
 {
   "openapi" : "3.0.0",
   "info" : {
-    "title" : "transactions api",
-    "description" : "manage transactions",
+    "title" : "accounts api",
+    "description" : "api to manage accounts",
     "version" : "1.0.0"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/MLC_PoC/transactions/1.0.0",
+    "url" : "https://virtserver.swaggerhub.com/MLC_PoC/accounts/1.0.0",
     "description" : "SwaggerHub API Auto Mocking"
   } ],
   "paths" : {
-    "/transactions" : {
+    "/accounts" : {
       "get" : {
-        "summary" : "get a list of transactions",
+        "summary" : "get a list of accounts",
+        "description" : "this is a description with some **bold** text",
         "responses" : {
           "200" : {
             "description" : "success"
@@ -24,7 +25,7 @@
         }
       },
       "post" : {
-        "summary" : "create a transaction",
+        "summary" : "get a list of accounts",
         "responses" : {
           "200" : {
             "description" : "success"
