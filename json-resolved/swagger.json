@@ -22,10 +22,9 @@
                 "schema" : {
                   "$ref" : "#/components/schemas/Account"
                 },
-                "examples" : {
-                  "success" : {
-                    "$ref" : "#/components/examples/valid-account"
-                  }
+                "example" : {
+                  "id" : 123,
+                  "name" : "some name"
                 }
               }
             }
@@ -61,15 +60,6 @@
           "name" : {
             "type" : "string"
           }
-        }
-      }
-    },
-    "examples" : {
-      "valid-account" : {
-        "summary" : "a valid account",
-        "value" : {
-          "id" : 1234567890,
-          "name" : "my special account"
         }
       }
     }
