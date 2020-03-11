@@ -10,7 +10,7 @@
     "description" : "SwaggerHub API Auto Mocking"
   } ],
   "paths" : {
-    "/transactions" : {
+    "/transactions-CHANGED" : {
       "get" : {
         "summary" : "get a list of transactions",
         "responses" : {
